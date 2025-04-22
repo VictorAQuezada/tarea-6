@@ -1,0 +1,15 @@
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\tarea6.csproj.AssemblyReference.cache
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\tarea6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\tarea6.AssemblyInfoInputs.cache
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\tarea6.AssemblyInfo.cs
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\tarea6.csproj.CoreCompileInputs.cache
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\bin\Debug\netstandard2.0\tarea6.deps.json
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\bin\Debug\netstandard2.0\tarea6.dll
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\bin\Debug\netstandard2.0\ref\tarea6.dll
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\bin\Debug\netstandard2.0\tarea6.pdb
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\tarea6.dll
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\refint\tarea6.dll
+C:\Users\Shint\Desktop\APPS\tarea6\tarea6\obj\Debug\netstandard2.0\tarea6.pdb

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tarea6.MainPage"
+             Title="Programadores Famosos"
+             BackgroundColor="#F0F3F8">
+
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="#FFFFFF" />
+            <Setter Property="BorderColor" Value="#182C61" />
+            <Setter Property="CornerRadius" Value="20" />
+            <Setter Property="HasShadow" Value="True" />
+            <Setter Property="Margin" Value="20,10" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+        <Style x:Key="headerLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="Large" />
+            <Setter Property="TextColor" Value="#182C61" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Text" Value="LEER MÁS" />
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="BackgroundColor" Value="#0652DD" />
+            <Setter Property="CornerRadius" Value="20" />
+            <Setter Property="Margin" Value="0,10" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <!-- Encabezado personalizado -->
+        <Frame BorderColor="#0652DD"
+               CornerRadius="20"
+               HasShadow="True"
+               BackgroundColor="#182C61"
+               Margin="20,30,20,10">
+            <StackLayout>
+                <Label Text="Programadores Famosos"
+                       FontSize="28"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" />
+                <Label Text="Victor Antonio Quezada Ramirez"
+                       FontSize="18"
+                       TextColor="#F7CA18"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"/>
+                <Label Text="23-EIST-8-001"
+                       FontSize="16"
+                       TextColor="#F7CA18"
+                       HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+
+        <!-- CarouselView para el hub dinámico -->
+        <CarouselView x:Name="ProgramadoresCarousel"
+                      ItemsSource="{Binding Programadores}"
+                      HeightRequest="420"
+                      IndicatorView="indicator"
+                      PeekAreaInsets="40">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="0" Margin="10,0" CornerRadius="20" HasShadow="True">
+                        <StackLayout Spacing="0" VerticalOptions="CenterAndExpand">
+                            <Image Source="{Binding Imagen}"
+                                   HeightRequest="180"
+                                   Aspect="AspectFill"
+                                   Margin="0,0,0,10"
+                                   HorizontalOptions="Center"/>
+                            <Label Text="{Binding Nombre}"
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   TextColor="#182C61"
+                                   HorizontalTextAlignment="Center"
+                                   Margin="0,0,0,2"/>
+                            <Label Text="{Binding DescripcionCorta}"
+                                   FontSize="14"
+                                   TextColor="#444"
+                                   HorizontalTextAlignment="Center"
+                                   Margin="10,0,10,0"/>
+                            <Button Text="LEER MÁS"
+                                    Command="{Binding BindingContext.LeerMasCommand, Source={x:Reference ProgramadoresCarousel}}"
+                                    CommandParameter="{Binding Url}"
+                                    Margin="30,10,30,0"/>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView x:Name="indicator"
+                       IndicatorColor="#B0B0B0"
+                       SelectedIndicatorColor="#0652DD"
+                       HorizontalOptions="Center"
+                       Margin="0,10"/>
+    </StackLayout>
+</ContentPage>
